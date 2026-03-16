@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cmpjl1v1rfb6q"]
+
+[ext_resource type="Texture2D" uid="uid://cgs8je1g372fs" path="res://assets/sprites/Decorations/info - Copy.png" id="1_cvp0o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cgrg5"]
+size = Vector2(272, 24)
+
+[node name="Bridge" type="StaticBody2D" unique_id=515235600]
+
+[node name="Bridge" type="Sprite2D" parent="." unique_id=1361786103]
+position = Vector2(0.9999988, -4.1115427)
+scale = Vector2(0.5677942, 0.57899004)
+texture = ExtResource("1_cvp0o")
+region_enabled = true
+region_rect = Rect2(26, 66, 827, 294)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1975957341]
+position = Vector2(-5, -9)
+shape = SubResource("RectangleShape2D_cgrg5")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1435238266]
+position = Vector2(255, -28)
+shape = SubResource("RectangleShape2D_cgrg5")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=975026356]
+position = Vector2(-261, -28)
+shape = SubResource("RectangleShape2D_cgrg5")

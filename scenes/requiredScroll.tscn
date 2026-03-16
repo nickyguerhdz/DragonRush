@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dv8doqnmdbswk"]
+
+[ext_resource type="Script" uid="uid://7nk7uc7blad1" path="res://scripts/required_scroll.gd" id="1_2201p"]
+[ext_resource type="Texture2D" uid="uid://cpc3w5kiqaqsp" path="res://assets/sprites/Decorations/obstacles.png" id="1_c0qqn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cgrg5"]
+size = Vector2(59.920715, 83.95269)
+
+[node name="Scroll" type="Area2D" unique_id=1551150092]
+script = ExtResource("1_2201p")
+
+[node name="Scroll" type="Sprite2D" parent="." unique_id=967256275]
+position = Vector2(3.3323221, 1.0619211)
+scale = Vector2(0.28823552, 0.29391897)
+texture = ExtResource("1_c0qqn")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1183, 557, 303, 344)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=606408951]
+position = Vector2(0.039642334, 0.023654938)
+shape = SubResource("RectangleShape2D_cgrg5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

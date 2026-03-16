@@ -1,32 +1,22 @@
 [gd_scene format=3 uid="uid://d02tlj0l8aq56"]
 
-[ext_resource type="Texture2D" uid="uid://bob6e8usprki0" path="res://icon.svg" id="1_jbojv"]
 [ext_resource type="Script" uid="uid://dy5btt4ss5rb0" path="res://scripts/goal.gd" id="1_sx1j4"]
+[ext_resource type="Texture2D" uid="uid://3liytifa5o1r" path="res://assets/sprites/Decorations/Templo_Meta1.png" id="2_sx1j4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sx1j4"]
-size = Vector2(130, 1282)
+size = Vector2(645, 142)
 
 [node name="Goal" type="Area2D" unique_id=1057034286]
 script = ExtResource("1_sx1j4")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=347174852]
-modulate = Color(0.9522725, 0.96444434, 2.3102762e-06, 1)
-scale = Vector2(1, 10)
-texture = ExtResource("1_jbojv")
+position = Vector2(0, -37)
+scale = Vector2(0.6677617, 0.9072848)
+texture = ExtResource("2_sx1j4")
+region_rect = Rect2(859, 288, 592, 496)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1340235273]
-position = Vector2(0, -1)
+position = Vector2(-4.5, 241)
 shape = SubResource("RectangleShape2D_sx1j4")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1523333020]
-visible = false
-
-[node name="Label" type="Label" parent="CanvasLayer" unique_id=1765400165]
-offset_left = 100.0
-offset_top = 412.0
-offset_right = 768.0
-offset_bottom = 500.0
-theme_override_font_sizes/font_size = 64
-text = "¡NIVEL COMPLETADO!"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

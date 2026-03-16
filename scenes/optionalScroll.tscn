@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://0xvbpp7k618j"]
+
+[ext_resource type="Script" uid="uid://c5u44e51tmnd5" path="res://scripts/optional_scroll.gd" id="1_13h34"]
+[ext_resource type="Texture2D" uid="uid://dnb2x68w7kkk5" path="res://assets/sprites/Decorations/Scroll2.png" id="2_13h34"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cgrg5"]
+size = Vector2(59.920715, 83.95269)
+
+[node name="Scroll" type="Area2D" unique_id=1551150092]
+script = ExtResource("1_13h34")
+
+[node name="Scroll" type="Sprite2D" parent="." unique_id=967256275]
+scale = Vector2(0.1134757, 0.14404432)
+texture = ExtResource("2_13h34")
+flip_h = true
+region_rect = Rect2(1183, 557, 303, 344)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=606408951]
+position = Vector2(0.039642334, 0.023654938)
+shape = SubResource("RectangleShape2D_cgrg5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

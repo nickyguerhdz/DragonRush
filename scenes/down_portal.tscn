@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dux8oajpnfei0"]
+
+[ext_resource type="Script" uid="uid://bc4vxqmf34jg8" path="res://scripts/portal_down.gd" id="1_4jn4w"]
+[ext_resource type="Texture2D" uid="uid://cpc3w5kiqaqsp" path="res://assets/sprites/Decorations/obstacles.png" id="2_tpk4f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j7w7d"]
+size = Vector2(60, 56)
+
+[node name="Portal_Down" type="Area2D" unique_id=1421939297]
+script = ExtResource("1_4jn4w")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=790087316]
+scale = Vector2(0.28865993, 0.28865978)
+texture = ExtResource("2_tpk4f")
+region_enabled = true
+region_rect = Rect2(771, 528, 409, 388)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1086962121]
+position = Vector2(0, 13)
+shape = SubResource("RectangleShape2D_j7w7d")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
