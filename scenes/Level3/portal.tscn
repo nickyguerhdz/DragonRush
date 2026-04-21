@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://c36rlylhohv8o"]
+
+[ext_resource type="Script" uid="uid://dchfbrax0dmo1" path="res://scripts/portal_wisteria.gd" id="1_34gc8"]
+[ext_resource type="Texture2D" uid="uid://cqneblnw1hm2k" path="res://assets/sprites/Decorations/Portal2.png" id="2_34gc8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1doms"]
+radius = 59.008472
+
+[node name="Portal" type="Node2D" unique_id=1846685905]
+script = ExtResource("1_34gc8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=790087316]
+position = Vector2(0, -89)
+scale = Vector2(0.5179859, 0.5179856)
+texture = ExtResource("2_34gc8")
+region_rect = Rect2(504, 303, 526, 417)
+
+[node name="DetectionArea" type="Area2D" parent="." unique_id=1945084209]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=1086962121]
+position = Vector2(0, -69)
+shape = SubResource("CircleShape2D_1doms")

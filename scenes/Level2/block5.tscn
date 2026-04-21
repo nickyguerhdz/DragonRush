@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://be211hpsm6jop"]
+
+[ext_resource type="Texture2D" uid="uid://batursni0nu5v" path="res://assets/sprites/Decorations/Blocks2.png" id="1_3ofa1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cgrg5"]
+size = Vector2(662, 49.625)
+
+[node name="Block" type="StaticBody2D" unique_id=515235600]
+position = Vector2(-49, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1028611612]
+position = Vector2(49, 0)
+scale = Vector2(0.50610346, 0.4600939)
+texture = ExtResource("1_3ofa1")
+region_enabled = true
+region_rect = Rect2(87, 461, 1408, 213)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1975957341]
+position = Vector2(47, 4.8125)
+shape = SubResource("RectangleShape2D_cgrg5")

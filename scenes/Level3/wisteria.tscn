@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ca2rcnceokufu"]
+
+[ext_resource type="Texture2D" uid="uid://chvcemlircflv" path="res://assets/sprites/Decorations/Elements2.png" id="1_0hchy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cgrg5"]
+size = Vector2(118.575455, 319.69382)
+
+[node name="Wisteria" type="StaticBody2D" unique_id=515235600]
+
+[node name="Wisteria" type="Sprite2D" parent="." unique_id=1361786103]
+position = Vector2(3.500001, -13.449738)
+scale = Vector2(0.59108526, 0.593726)
+texture = ExtResource("1_0hchy")
+region_rect = Rect2(85, 460, 393, 532)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1975957341]
+position = Vector2(0, 18)
+shape = SubResource("RectangleShape2D_cgrg5")

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://2x3x1kunwdoq"]
+
+[ext_resource type="Script" uid="uid://b275p6sfkhpy3" path="res://scripts/goal2.gd" id="1_cvbb1"]
+[ext_resource type="Texture2D" uid="uid://jwtlun4dppt6" path="res://assets/sprites/Decorations/GoalWisteria.png" id="2_eyscy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sx1j4"]
+size = Vector2(621.125, 300.5)
+
+[node name="Goal" type="Area2D" unique_id=1057034286]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource("1_cvbb1")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=347174852]
+position = Vector2(-4, -3.0517578e-05)
+scale = Vector2(0.6677617, 0.666533)
+texture = ExtResource("2_eyscy")
+region_rect = Rect2(859, 288, 592, 496)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1340235273]
+position = Vector2(-10.5625, 60)
+shape = SubResource("RectangleShape2D_sx1j4")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

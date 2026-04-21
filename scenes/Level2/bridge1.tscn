@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://p2sadf67v7ac"]
+
+[ext_resource type="Texture2D" uid="uid://bfng1wpyxo43b" path="res://assets/sprites/Decorations/Obstacles2.png" id="1_1ikge"]
+
+[node name="Bridge" type="StaticBody2D" unique_id=515235600]
+
+[node name="Bridge" type="Sprite2D" parent="." unique_id=1361786103]
+position = Vector2(0.9999988, -4.1115427)
+scale = Vector2(0.6698912, 0.74225533)
+texture = ExtResource("1_1ikge")
+region_enabled = true
+region_rect = Rect2(26, 15, 789, 270)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1600899980]
+polygon = PackedVector2Array(-99, 14, -55, 21, -7, 22, 37, 22, 79, 15, 122, -2, 133, -7, 168, -7, 219, -7, 256, -6, 254, 7, 136, 5, 66, 33, 14, 39, -30, 39, -72, 36, -103, 30)

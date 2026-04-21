@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://dl1fscfb20vi7"]
 
 [ext_resource type="Script" uid="uid://b8ac2rour8vmn" path="res://scripts/spike.gd" id="1_lynim"]
-[ext_resource type="Texture2D" uid="uid://cpc3w5kiqaqsp" path="res://assets/sprites/Decorations/obstacles.png" id="2_y0slg"]
+[ext_resource type="Texture2D" uid="uid://cpc3w5kiqaqsp" path="res://assets/sprites/Decorations/Obstacles1.png" id="2_y0slg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7a7y0"]
 size = Vector2(94, 94)
 
 [node name="TNT" type="Area2D" unique_id=1858617931]
+collision_layer = 2
+collision_mask = 4
 script = ExtResource("1_lynim")
 
 [node name="TNT" type="Sprite2D" parent="." unique_id=1608861192]

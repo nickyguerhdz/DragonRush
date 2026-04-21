@@ -1,0 +1,1700 @@
+[gd_scene format=3 uid="uid://bu7q8vwe1ky1r"]
+
+[ext_resource type="Script" uid="uid://i4i0848u05v0" path="res://scripts/level_1.gd" id="1_lkstw"]
+[ext_resource type="PackedScene" uid="uid://l1lcywot0sl5" path="res://scenes/player.tscn" id="2_3royl"]
+[ext_resource type="Texture2D" uid="uid://b6pl0es1kfnlr" path="res://assets/sprites/Backgrounds/background4.png" id="3_xgm5b"]
+[ext_resource type="Texture2D" uid="uid://mylmclydj2qd" path="res://assets/sprites/Backgrounds/background5.png" id="4_gcaxs"]
+[ext_resource type="Script" uid="uid://dwv07spomxien" path="res://scripts/killzone.gd" id="5_ust8p"]
+[ext_resource type="PackedScene" uid="uid://d02tlj0l8aq56" path="res://scenes/Level1/goal.tscn" id="6_dq4g3"]
+[ext_resource type="PackedScene" uid="uid://dw6s2onx76fqj" path="res://scenes/Level1/bamboo.tscn" id="7_3i5st"]
+[ext_resource type="PackedScene" uid="uid://ccb3tav5bymp8" path="res://scenes/Level1/platform3.tscn" id="8_rx0b7"]
+[ext_resource type="PackedScene" uid="uid://dm3g6nplc62v1" path="res://scenes/Level1/platform1.tscn" id="9_nwro1"]
+[ext_resource type="PackedScene" uid="uid://2v1uxrg875yi" path="res://scenes/Level1/platform2.tscn" id="10_7gvyi"]
+[ext_resource type="PackedScene" uid="uid://dfoo8ps3r134g" path="res://scenes/Level1/platform4.tscn" id="11_4v7g1"]
+[ext_resource type="PackedScene" uid="uid://ckhxpgv85cbjd" path="res://scenes/Level1/spikeUp.tscn" id="12_g28bu"]
+[ext_resource type="PackedScene" uid="uid://bjidepakx61hn" path="res://scenes/Level1/spikeDown.tscn" id="13_qfpcp"]
+[ext_resource type="PackedScene" uid="uid://cgksa6q82llkh" path="res://scenes/Level1/block5.tscn" id="14_8dk7g"]
+[ext_resource type="PackedScene" uid="uid://dxbs40j5e1hh1" path="res://scenes/Level1/block4.tscn" id="15_0nuam"]
+[ext_resource type="PackedScene" uid="uid://c87o3x61hjtni" path="res://scenes/Level1/block3.tscn" id="16_db6m3"]
+[ext_resource type="PackedScene" uid="uid://lw00724wq72r" path="res://scenes/Level1/block2.tscn" id="17_df8nw"]
+[ext_resource type="PackedScene" uid="uid://fs50yexxmpyq" path="res://scenes/Level1/block1.tscn" id="18_xlgpe"]
+[ext_resource type="PackedScene" uid="uid://djhhny40fi6hh" path="res://scenes/Level1/antigravity_portal.tscn" id="19_043et"]
+[ext_resource type="PackedScene" uid="uid://b6o11en8rrobs" path="res://scenes/Level1/gravity_portal.tscn" id="20_7hp60"]
+[ext_resource type="PackedScene" uid="uid://dv8doqnmdbswk" path="res://scenes/requiredScroll.tscn" id="21_qu1n2"]
+[ext_resource type="PackedScene" uid="uid://bqduju8g7gmdg" path="res://scenes/Level1/bridge2.tscn" id="22_a3wdt"]
+[ext_resource type="PackedScene" uid="uid://cmpjl1v1rfb6q" path="res://scenes/Level1/bridge1.tscn" id="23_wkhh1"]
+[ext_resource type="PackedScene" uid="uid://dl1fscfb20vi7" path="res://scenes/tnt.tscn" id="24_asjau"]
+[ext_resource type="Script" uid="uid://bm5iwq0g1ltfx" path="res://scripts/start_screen.gd" id="25_q7ci5"]
+[ext_resource type="Texture2D" uid="uid://jeasoluolwoo" path="res://assets/sprites/Decorations/StartBtn1.png" id="26_trufv"]
+[ext_resource type="Texture2D" uid="uid://cyqxp0th4y6la" path="res://assets/sprites/Decorations/Label1.png" id="27_kc6j4"]
+[ext_resource type="Script" uid="uid://4o8k5qvrxh8k" path="res://scripts/end_screen.gd" id="28_7tofx"]
+[ext_resource type="Script" uid="uid://dp6md8vwphher" path="res://scripts/wisdom_screen.gd" id="28_ust8p"]
+[ext_resource type="Texture2D" uid="uid://b7all4sstteq2" path="res://assets/sprites/Decorations/BackgroundPaper.png" id="29_3royl"]
+[ext_resource type="Texture2D" uid="uid://c1wkskbnn00yl" path="res://assets/sprites/Decorations/Background1.png" id="29_ju8dd"]
+[ext_resource type="Texture2D" uid="uid://dtl4ql3ygsqx2" path="res://assets/sprites/Decorations/Dashboard1.png" id="30_og86b"]
+[ext_resource type="Texture2D" uid="uid://d2neox1itiy4l" path="res://assets/sprites/Decorations/StartLevel.png" id="31_uxe1b"]
+[ext_resource type="Texture2D" uid="uid://dnb2x68w7kkk5" path="res://assets/sprites/Decorations/Scroll2.png" id="32_gcaxs"]
+[ext_resource type="Texture2D" uid="uid://cbf0ovffrckci" path="res://assets/sprites/Decorations/Scroll1.png" id="32_xgm5b"]
+[ext_resource type="FontFile" uid="uid://cvbkbsm50fwi0" path="res://assets/fonts/Cinzel-Bold.otf" id="32_yqfal"]
+[ext_resource type="Texture2D" uid="uid://klasetvc7gbb" path="res://assets/sprites/Decorations/ContinueBtn1.png" id="33_ielkx"]
+[ext_resource type="FontFile" uid="uid://cwvmr1oajf3i8" path="res://assets/fonts/Noto_Serif_SC/NotoSerifSC-ExtraBold.ttf" id="34_dq4g3"]
+[ext_resource type="Texture2D" uid="uid://tjaacwbgjoc7" path="res://assets/sprites/Decorations/NextLevelBtn1.png" id="34_houbx"]
+[ext_resource type="Texture2D" uid="uid://brcu8c5g0nga" path="res://assets/sprites/Decorations/Scroll.png" id="35_vrspg"]
+[ext_resource type="Texture2D" uid="uid://4xbaxs4untgf" path="res://assets/sprites/Decorations/Check.png" id="36_ej6mk"]
+[ext_resource type="Texture2D" uid="uid://xmq3bqttr342" path="res://assets/sprites/Decorations/Book1.png" id="37_rd52u"]
+[ext_resource type="AudioStream" uid="uid://c005qj8jona73" path="res://assets/sounds/computer-mouse.mp3" id="38_eipfb"]
+[ext_resource type="AudioStream" uid="uid://dplnlni4qxnv4" path="res://assets/sounds/star_obtained.mp3" id="39_53meb"]
+[ext_resource type="Script" uid="uid://cir15nhs23ae5" path="res://scripts/try_again_screen.gd" id="40_iuj8j"]
+[ext_resource type="Texture2D" uid="uid://ds8manbw5ykss" path="res://assets/sprites/Decorations/TryAgainSunset.png" id="41_4qay4"]
+[ext_resource type="Texture2D" uid="uid://c3j6pl4dp1iw6" path="res://assets/sprites/Decorations/TryAgainBtn1.png" id="42_nqxit"]
+[ext_resource type="AudioStream" uid="uid://duhnyvtn3h050" path="res://assets/sounds/negative_beeps.mp3" id="43_mrina"]
+[ext_resource type="PackedScene" uid="uid://0xvbpp7k618j" path="res://scenes/optionalScroll.tscn" id="44_l01wd"]
+[ext_resource type="AudioStream" uid="uid://dnnfcum00f1jd" path="res://assets/music/desifreemusic-old-rural-nostalgia-emotional-bangla-folk-background-music-489531.mp3" id="50_3i5st"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x6tdi"]
+size = Vector2(37739, 172.5)
+
+[sub_resource type="Animation" id="Animation_ieq4v"]
+length = 2.0333333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../StartScreen/Text/TextureRect:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.3052809, 0.3052809)]
+}
+
+[sub_resource type="Animation" id="Animation_dg810"]
+resource_name = "idle_click"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../StartScreen/Text/TextureRect:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.3052809, 0.3052809), Vector2(0.33, 0.33)]
+}
+
+[sub_resource type="Animation" id="Animation_x7yw7"]
+resource_name = "new_animation"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_knhdr"]
+_data = {
+&"RESET": SubResource("Animation_ieq4v"),
+&"idle_click": SubResource("Animation_dg810"),
+&"new_animation": SubResource("Animation_x7yw7")
+}
+
+[node name="Level1" type="Node2D" unique_id=140689431]
+script = ExtResource("1_lkstw")
+
+[node name="Player" parent="." unique_id=560082526 instance=ExtResource("2_3royl")]
+position = Vector2(608, -121)
+
+[node name="Backgrounds" type="Node" parent="." unique_id=888541388]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="Backgrounds" unique_id=1081340852]
+
+[node name="ParallaxLayer1" type="ParallaxLayer" parent="Backgrounds/ParallaxBackground" unique_id=118878480]
+position = Vector2(1802, 14)
+motion_scale = Vector2(0.1, 1)
+
+[node name="background1" type="Sprite2D" parent="Backgrounds/ParallaxBackground/ParallaxLayer1" unique_id=1307466699]
+position = Vector2(3.0517578e-05, -797)
+scale = Vector2(2.3578913, 2.190709)
+texture = ExtResource("3_xgm5b")
+region_enabled = true
+region_rect = Rect2(0, 0, 1536, 818)
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="Backgrounds/ParallaxBackground" unique_id=1861249775]
+
+[node name="background2" type="Sprite2D" parent="Backgrounds/ParallaxBackground/ParallaxLayer2" unique_id=1572083173]
+position = Vector2(5360, -792)
+scale = Vector2(2.2848349, 2.174233)
+texture = ExtResource("4_gcaxs")
+region_enabled = true
+region_rect = Rect2(0, 0, 1536, 815)
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="Backgrounds/ParallaxBackground" unique_id=683100601]
+
+[node name="background3" type="Sprite2D" parent="Backgrounds/ParallaxBackground/ParallaxLayer3" unique_id=1167433396]
+position = Vector2(8816, -816)
+scale = Vector2(2.2710495, 2.1100245)
+texture = ExtResource("3_xgm5b")
+region_enabled = true
+region_rect = Rect2(0, 0, 1536, 818)
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="Backgrounds/ParallaxBackground" unique_id=1320984496]
+
+[node name="background4" type="Sprite2D" parent="Backgrounds/ParallaxBackground/ParallaxLayer4" unique_id=1194631098]
+position = Vector2(12207.58, -815.5)
+scale = Vector2(2.1567957, 2.1165645)
+texture = ExtResource("4_gcaxs")
+region_enabled = true
+region_rect = Rect2(0, 0, 1536, 815)
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="Backgrounds/ParallaxBackground" unique_id=67835789]
+
+[node name="background5" type="Sprite2D" parent="Backgrounds/ParallaxBackground/ParallaxLayer5" unique_id=229973879]
+position = Vector2(15598.001, -811)
+scale = Vector2(2.2710495, 2.1100245)
+texture = ExtResource("3_xgm5b")
+region_enabled = true
+region_rect = Rect2(0, 0, 1536, 818)
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="Backgrounds/ParallaxBackground" unique_id=1763621532]
+
+[node name="background6" type="Sprite2D" parent="Backgrounds/ParallaxBackground/ParallaxLayer6" unique_id=1871448225]
+position = Vector2(18998.004, -809)
+scale = Vector2(2.1567957, 2.1165645)
+texture = ExtResource("4_gcaxs")
+region_enabled = true
+region_rect = Rect2(0, 0, 1536, 815)
+
+[node name="ParallaxLayer7" type="ParallaxLayer" parent="Backgrounds/ParallaxBackground" unique_id=435779962]
+
+[node name="background7" type="Sprite2D" parent="Backgrounds/ParallaxBackground/ParallaxLayer7" unique_id=425071302]
+position = Vector2(22388, -807)
+scale = Vector2(2.2710495, 2.1100245)
+texture = ExtResource("3_xgm5b")
+region_enabled = true
+region_rect = Rect2(0, 0, 1536, 818)
+
+[node name="ParallaxLayer8" type="ParallaxLayer" parent="Backgrounds/ParallaxBackground" unique_id=1120366869]
+
+[node name="background8" type="Sprite2D" parent="Backgrounds/ParallaxBackground/ParallaxLayer8" unique_id=2024462604]
+position = Vector2(25772, -805.00006)
+scale = Vector2(2.1567957, 2.1165645)
+texture = ExtResource("4_gcaxs")
+region_enabled = true
+region_rect = Rect2(0, 0, 1536, 815)
+
+[node name="ParallaxLayer9" type="ParallaxLayer" parent="Backgrounds/ParallaxBackground" unique_id=1503456508]
+
+[node name="background9" type="Sprite2D" parent="Backgrounds/ParallaxBackground/ParallaxLayer9" unique_id=1457759969]
+position = Vector2(29157.002, -804)
+scale = Vector2(2.2710495, 2.1100245)
+texture = ExtResource("3_xgm5b")
+region_enabled = true
+region_rect = Rect2(0, 0, 1536, 818)
+
+[node name="ParallaxLayer10" type="ParallaxLayer" parent="Backgrounds/ParallaxBackground" unique_id=881559910]
+
+[node name="background10" type="Sprite2D" parent="Backgrounds/ParallaxBackground/ParallaxLayer10" unique_id=857440521]
+position = Vector2(32554.002, -803)
+scale = Vector2(2.1567957, 2.1165645)
+texture = ExtResource("4_gcaxs")
+region_enabled = true
+region_rect = Rect2(0, 0, 1536, 815)
+
+[node name="ParallaxLayer11" type="ParallaxLayer" parent="Backgrounds/ParallaxBackground" unique_id=802758882]
+
+[node name="background11" type="Sprite2D" parent="Backgrounds/ParallaxBackground/ParallaxLayer11" unique_id=827648618]
+position = Vector2(35944.996, -801)
+scale = Vector2(2.2710495, 2.1100245)
+texture = ExtResource("3_xgm5b")
+region_enabled = true
+region_rect = Rect2(0, 0, 1536, 818)
+
+[node name="Killzone" type="Area2D" parent="Backgrounds" unique_id=1491191906]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource("5_ust8p")
+
+[node name="RedTop" type="CollisionShape2D" parent="Backgrounds/Killzone" unique_id=864811132]
+z_index = 100
+position = Vector2(18857.5, 81.75)
+shape = SubResource("RectangleShape2D_x6tdi")
+debug_color = Color(0.9986089, 0, 0.19717368, 0.273)
+
+[node name="RedBottom" type="CollisionShape2D" parent="Backgrounds/Killzone" unique_id=731023655]
+z_index = 100
+position = Vector2(18858, -1678)
+shape = SubResource("RectangleShape2D_x6tdi")
+debug_color = Color(0.9986089, 0, 0.19717368, 0.273)
+
+[node name="Blocks" type="Node" parent="." unique_id=1995243015]
+
+[node name="Block2" parent="Blocks" unique_id=124702250 instance=ExtResource("14_8dk7g")]
+position = Vector2(2314, -437)
+
+[node name="Block3" parent="Blocks" unique_id=569413581 instance=ExtResource("14_8dk7g")]
+position = Vector2(6518, -392)
+
+[node name="Block4" parent="Blocks" unique_id=2075901172 instance=ExtResource("14_8dk7g")]
+position = Vector2(4357, -557)
+
+[node name="Block5" parent="Blocks" unique_id=1692721110 instance=ExtResource("14_8dk7g")]
+position = Vector2(5019, -1471)
+
+[node name="Block6" parent="Blocks" unique_id=985724805 instance=ExtResource("14_8dk7g")]
+position = Vector2(5597, -1471)
+
+[node name="Block7" parent="Blocks" unique_id=57661340 instance=ExtResource("15_0nuam")]
+position = Vector2(7088, -520)
+
+[node name="Block8" parent="Blocks" unique_id=978822186 instance=ExtResource("14_8dk7g")]
+position = Vector2(7696, -525)
+
+[node name="Block9" parent="Blocks" unique_id=1255520456 instance=ExtResource("16_db6m3")]
+position = Vector2(3026, -644)
+
+[node name="Block10" parent="Blocks" unique_id=1708530203 instance=ExtResource("17_df8nw")]
+position = Vector2(8192, -624)
+
+[node name="Block11" parent="Blocks" unique_id=51704306 instance=ExtResource("16_db6m3")]
+position = Vector2(8560, -720)
+
+[node name="Block12" parent="Blocks" unique_id=915166917 instance=ExtResource("15_0nuam")]
+position = Vector2(9032, -832)
+
+[node name="Block14" parent="Blocks" unique_id=331979057 instance=ExtResource("17_df8nw")]
+position = Vector2(2712, -547)
+
+[node name="Block15" parent="Blocks" unique_id=689717607 instance=ExtResource("16_db6m3")]
+position = Vector2(3695, -557)
+
+[node name="Block16" parent="Blocks" unique_id=1523972431 instance=ExtResource("17_df8nw")]
+position = Vector2(3334, -816)
+
+[node name="Block17" parent="Blocks" unique_id=1977490421 instance=ExtResource("14_8dk7g")]
+position = Vector2(9739, -504)
+
+[node name="Block18" parent="Blocks" unique_id=2000603814 instance=ExtResource("14_8dk7g")]
+position = Vector2(11496, -1508)
+
+[node name="Block19" parent="Blocks" unique_id=860843389 instance=ExtResource("15_0nuam")]
+position = Vector2(12082, -1324)
+
+[node name="Block20" parent="Blocks" unique_id=2062178300 instance=ExtResource("16_db6m3")]
+position = Vector2(12630, -1215)
+
+[node name="Block21" parent="Blocks" unique_id=1716837815 instance=ExtResource("14_8dk7g")]
+position = Vector2(13124, -1360)
+
+[node name="Block22" parent="Blocks" unique_id=502005286 instance=ExtResource("14_8dk7g")]
+position = Vector2(27378, -1474)
+
+[node name="Block23" parent="Blocks" unique_id=1616561306 instance=ExtResource("14_8dk7g")]
+position = Vector2(27944, -1474)
+
+[node name="Block24" parent="Blocks" unique_id=318849474 instance=ExtResource("15_0nuam")]
+position = Vector2(28548, -1297)
+
+[node name="Block25" parent="Blocks" unique_id=1333780807 instance=ExtResource("15_0nuam")]
+position = Vector2(29157, -1189)
+
+[node name="Block26" parent="Blocks" unique_id=1393185290 instance=ExtResource("16_db6m3")]
+position = Vector2(10532, -501)
+
+[node name="Block27" parent="Blocks" unique_id=329372521 instance=ExtResource("17_df8nw")]
+position = Vector2(15933, -622)
+
+[node name="Block28" parent="Blocks" unique_id=539660136 instance=ExtResource("14_8dk7g")]
+position = Vector2(14058, -586)
+
+[node name="Block29" parent="Blocks" unique_id=1918297134 instance=ExtResource("15_0nuam")]
+position = Vector2(14692, -728)
+
+[node name="Block30" parent="Blocks" unique_id=206790048 instance=ExtResource("17_df8nw")]
+position = Vector2(15014, -884)
+
+[node name="Block31" parent="Blocks" unique_id=1426035827 instance=ExtResource("16_db6m3")]
+position = Vector2(15521, -805)
+
+[node name="Block32" parent="Blocks" unique_id=1940803409 instance=ExtResource("15_0nuam")]
+position = Vector2(15298, -613)
+
+[node name="Block33" parent="Blocks" unique_id=222119234 instance=ExtResource("16_db6m3")]
+position = Vector2(17539, -214)
+
+[node name="Block34" parent="Blocks" unique_id=1779219214 instance=ExtResource("14_8dk7g")]
+position = Vector2(18091, -349)
+
+[node name="Block35" parent="Blocks" unique_id=318627077 instance=ExtResource("16_db6m3")]
+position = Vector2(18678, -490)
+
+[node name="Block36" parent="Blocks" unique_id=1149632077 instance=ExtResource("14_8dk7g")]
+position = Vector2(19565, -1386)
+
+[node name="Block37" parent="Blocks" unique_id=1074444978 instance=ExtResource("15_0nuam")]
+position = Vector2(20116, -1250)
+
+[node name="Block38" parent="Blocks" unique_id=344356342 instance=ExtResource("16_db6m3")]
+position = Vector2(20629, -1098)
+
+[node name="Block39" parent="Blocks" unique_id=2052109912 instance=ExtResource("14_8dk7g")]
+position = Vector2(21164, -1281)
+
+[node name="Block40" parent="Blocks" unique_id=278620808 instance=ExtResource("16_db6m3")]
+position = Vector2(22009, -1103)
+
+[node name="Block41" parent="Blocks" unique_id=1165997896 instance=ExtResource("15_0nuam")]
+position = Vector2(23082, -183)
+
+[node name="Block42" parent="Blocks" unique_id=1390714869 instance=ExtResource("14_8dk7g")]
+position = Vector2(23493, -350)
+
+[node name="Block43" parent="Blocks" unique_id=507190259 instance=ExtResource("14_8dk7g")]
+position = Vector2(24057, -349)
+
+[node name="Block44" parent="Blocks" unique_id=460991364 instance=ExtResource("18_xlgpe")]
+position = Vector2(23765, -535)
+
+[node name="Block45" parent="Blocks" unique_id=1301293668 instance=ExtResource("17_df8nw")]
+position = Vector2(24502, -515)
+
+[node name="Block46" parent="Blocks" unique_id=350649750 instance=ExtResource("15_0nuam")]
+position = Vector2(24987, -604)
+
+[node name="Block47" parent="Blocks" unique_id=59591683 instance=ExtResource("15_0nuam")]
+position = Vector2(25450, -288)
+
+[node name="Block48" parent="Blocks" unique_id=1900050718 instance=ExtResource("14_8dk7g")]
+position = Vector2(26049, -402)
+
+[node name="Block49" parent="Blocks" unique_id=776367065 instance=ExtResource("14_8dk7g")]
+position = Vector2(26608, -402)
+
+[node name="Block50" parent="Blocks" unique_id=1103823300 instance=ExtResource("14_8dk7g")]
+position = Vector2(27172, -402)
+
+[node name="Block51" parent="Blocks" unique_id=2117704857 instance=ExtResource("17_df8nw")]
+position = Vector2(26422, -603)
+
+[node name="Block52" parent="Blocks" unique_id=1328857630 instance=ExtResource("16_db6m3")]
+position = Vector2(26822, -735)
+
+[node name="Block53" parent="Blocks" unique_id=1689011620 instance=ExtResource("16_db6m3")]
+position = Vector2(29665, -1308)
+
+[node name="Block54" parent="Blocks" unique_id=81171035 instance=ExtResource("17_df8nw")]
+position = Vector2(30050, -1467)
+
+[node name="Block55" parent="Blocks" unique_id=581413756 instance=ExtResource("15_0nuam")]
+position = Vector2(30553, -1285)
+
+[node name="Block56" parent="Blocks" unique_id=65374374 instance=ExtResource("14_8dk7g")]
+position = Vector2(31920, -504)
+
+[node name="Block57" parent="Blocks" unique_id=1611516133 instance=ExtResource("16_db6m3")]
+position = Vector2(15985, -943)
+
+[node name="Block58" parent="Blocks" unique_id=1473449153 instance=ExtResource("15_0nuam")]
+position = Vector2(32539, -288)
+
+[node name="Block59" parent="Blocks" unique_id=1547527829 instance=ExtResource("14_8dk7g")]
+position = Vector2(33197, -374)
+
+[node name="Block60" parent="Blocks" unique_id=1878022336 instance=ExtResource("16_db6m3")]
+position = Vector2(33739, -509)
+
+[node name="Block61" parent="Blocks" unique_id=547978540 instance=ExtResource("17_df8nw")]
+position = Vector2(34138, -636)
+
+[node name="Block62" parent="Blocks" unique_id=975298039 instance=ExtResource("15_0nuam")]
+position = Vector2(34581, -540)
+
+[node name="Block63" parent="Blocks" unique_id=402281084 instance=ExtResource("15_0nuam")]
+position = Vector2(35004, -541)
+
+[node name="Block64" parent="Blocks" unique_id=1596180590 instance=ExtResource("17_df8nw")]
+position = Vector2(15307, -992)
+
+[node name="Block65" parent="Blocks" unique_id=1728857389 instance=ExtResource("17_df8nw")]
+position = Vector2(1914, -334)
+
+[node name="Block66" parent="Blocks" unique_id=903586519 instance=ExtResource("17_df8nw")]
+position = Vector2(1678, -231)
+
+[node name="Block67" parent="Blocks" unique_id=515235600 instance=ExtResource("14_8dk7g")]
+position = Vector2(31360, -504)
+
+[node name="Bombs" type="Node" parent="." unique_id=1292668274]
+
+[node name="TNT1" parent="Bombs" unique_id=1587403636 instance=ExtResource("24_asjau")]
+position = Vector2(3966, -568)
+
+[node name="TNT2" parent="Bombs" unique_id=196861235 instance=ExtResource("24_asjau")]
+position = Vector2(15400, -284)
+
+[node name="TNT3" parent="Bombs" unique_id=1858617931 instance=ExtResource("24_asjau")]
+position = Vector2(18315, -476)
+
+[node name="TNT4" parent="Bombs" unique_id=1432757548 instance=ExtResource("24_asjau")]
+position = Vector2(23623, -482)
+
+[node name="TNT6" parent="Bombs" unique_id=2132276333 instance=ExtResource("24_asjau")]
+position = Vector2(26613, -535)
+
+[node name="TNT7" parent="Bombs" unique_id=1704645782 instance=ExtResource("24_asjau")]
+position = Vector2(35004, -669)
+
+[node name="Bridges" type="Node" parent="." unique_id=1237229228]
+
+[node name="Bridge1" parent="Bridges" unique_id=1481226827 instance=ExtResource("22_a3wdt")]
+z_index = 6
+position = Vector2(16905, -140)
+
+[node name="Bridge2" parent="Bridges" unique_id=631778783 instance=ExtResource("23_wkhh1")]
+z_index = 4
+position = Vector2(22436, -28)
+
+[node name="Bridge3" parent="Bridges" unique_id=2122752575 instance=ExtResource("23_wkhh1")]
+z_index = 6
+position = Vector2(25797, -37)
+
+[node name="Decorations" type="Node" parent="." unique_id=1352666401]
+
+[node name="eGoalTemple" parent="Decorations" unique_id=1057034286 instance=ExtResource("6_dq4g3")]
+z_index = 9
+position = Vector2(37319, -336)
+
+[node name="Bamboo" parent="Decorations" unique_id=193019500 instance=ExtResource("7_3i5st")]
+z_index = 1
+position = Vector2(249, -501)
+
+[node name="GoalTemplate" parent="Decorations" unique_id=22298990 instance=ExtResource("6_dq4g3")]
+position = Vector2(4687, -896)
+
+[node name="Platforms" type="Node" parent="." unique_id=480279479]
+
+[node name="Platform1" parent="Platforms" unique_id=2104867419 instance=ExtResource("8_rx0b7")]
+position = Vector2(4603, -28)
+
+[node name="Platform2" parent="Platforms" unique_id=675857209 instance=ExtResource("9_nwro1")]
+position = Vector2(9944, -16)
+
+[node name="Platform3" parent="Platforms" unique_id=69529316 instance=ExtResource("9_nwro1")]
+position = Vector2(457, -33)
+
+[node name="Platform4" parent="Platforms" unique_id=278194285 instance=ExtResource("10_7gvyi")]
+position = Vector2(2046, -37)
+
+[node name="Platform5" parent="Platforms" unique_id=1692915577 instance=ExtResource("8_rx0b7")]
+position = Vector2(7771, -27)
+
+[node name="Platform6" parent="Platforms" unique_id=799707407 instance=ExtResource("8_rx0b7")]
+position = Vector2(12157, -8)
+
+[node name="Platform7" parent="Platforms" unique_id=1247841949 instance=ExtResource("8_rx0b7")]
+position = Vector2(15236, -105)
+
+[node name="Platform8" parent="Platforms" unique_id=1566501639 instance=ExtResource("11_4v7g1")]
+position = Vector2(37195, 82)
+
+[node name="Platform9" parent="Platforms" unique_id=1663869150 instance=ExtResource("8_rx0b7")]
+position = Vector2(18569, 14)
+
+[node name="Platform10" parent="Platforms" unique_id=1045690590 instance=ExtResource("10_7gvyi")]
+position = Vector2(21353, 22)
+
+[node name="Platform11" parent="Platforms" unique_id=181968108 instance=ExtResource("8_rx0b7")]
+position = Vector2(24132, 47)
+
+[node name="Platform12" parent="Platforms" unique_id=1956988478 instance=ExtResource("10_7gvyi")]
+position = Vector2(26772, 47)
+
+[node name="Platform13" parent="Platforms" unique_id=389465121 instance=ExtResource("10_7gvyi")]
+position = Vector2(32310, 62)
+
+[node name="Platform14" parent="Platforms" unique_id=1602895947 instance=ExtResource("8_rx0b7")]
+position = Vector2(29522, -37)
+
+[node name="Platform15" parent="Platforms" unique_id=1470000961 instance=ExtResource("8_rx0b7")]
+position = Vector2(34835, 66)
+
+[node name="Portals" type="Node" parent="." unique_id=936845236]
+
+[node name="AntigravityPortal" parent="Portals" unique_id=1850492707 instance=ExtResource("19_043et")]
+z_index = 8
+position = Vector2(5049, -286)
+
+[node name="GravityPortal" parent="Portals" unique_id=1132447433 instance=ExtResource("20_7hp60")]
+position = Vector2(6235, -1324)
+
+[node name="AntigravityPortal2" parent="Portals" unique_id=815804093 instance=ExtResource("19_043et")]
+position = Vector2(10949, -286)
+
+[node name="GravityPortal2" parent="Portals" unique_id=886649924 instance=ExtResource("20_7hp60")]
+position = Vector2(13751, -1343)
+
+[node name="AntigravityPortal3" parent="Portals" unique_id=1549880936 instance=ExtResource("19_043et")]
+z_index = 100
+position = Vector2(19289, -254)
+
+[node name="GravityPortal3" parent="Portals" unique_id=1898172054 instance=ExtResource("20_7hp60")]
+position = Vector2(21670, -1345)
+
+[node name="GravityPortal4" parent="Portals" unique_id=1421939297 instance=ExtResource("20_7hp60")]
+position = Vector2(31070, -1348)
+
+[node name="AntigravityPortal4" parent="Portals" unique_id=562871770 instance=ExtResource("19_043et")]
+position = Vector2(27205, -608)
+
+[node name="Spikes" type="Node" parent="." unique_id=1009922543]
+
+[node name="Spike1" parent="Spikes" unique_id=35521430 instance=ExtResource("12_g28bu")]
+z_index = 4
+position = Vector2(3977, -190)
+
+[node name="Spike2" parent="Spikes" unique_id=2115248349 instance=ExtResource("12_g28bu")]
+z_index = 14
+position = Vector2(7371, -202)
+
+[node name="Spike3" parent="Spikes" unique_id=1494210038 instance=ExtResource("12_g28bu")]
+position = Vector2(10100, -213)
+
+[node name="Spike4" parent="Spikes" unique_id=191034863 instance=ExtResource("12_g28bu")]
+z_index = 100
+position = Vector2(12744, -178)
+
+[node name="Spike5" parent="Spikes" unique_id=96974718 instance=ExtResource("13_qfpcp")]
+position = Vector2(12411, -1508)
+
+[node name="Spike6" parent="Spikes" unique_id=1845544443 instance=ExtResource("13_qfpcp")]
+position = Vector2(20552, -1466)
+
+[node name="Spike7" parent="Spikes" unique_id=159874004 instance=ExtResource("12_g28bu")]
+z_index = 5
+position = Vector2(24456, -133)
+
+[node name="RequiredScrolls" type="Node" parent="." unique_id=515303088]
+
+[node name="Scroll1" parent="RequiredScrolls" unique_id=1984495965 instance=ExtResource("21_qu1n2")]
+position = Vector2(3344, -933)
+
+[node name="Scroll2" parent="RequiredScrolls" unique_id=1427765758 instance=ExtResource("21_qu1n2")]
+position = Vector2(9896, -620)
+scroll_index = 1
+
+[node name="Scroll3" parent="RequiredScrolls" unique_id=684075219 instance=ExtResource("21_qu1n2")]
+position = Vector2(15307, -1123)
+scroll_index = 2
+
+[node name="Scroll4" parent="RequiredScrolls" unique_id=2047575260 instance=ExtResource("21_qu1n2")]
+position = Vector2(23146, -306)
+scroll_index = 3
+
+[node name="Scroll5" parent="RequiredScrolls" unique_id=122270970 instance=ExtResource("21_qu1n2")]
+position = Vector2(26937, -853)
+scroll_index = 4
+
+[node name="OptionalScrolls" type="Node" parent="." unique_id=1623540908]
+
+[node name="Scroll1" parent="OptionalScrolls" unique_id=153861286 instance=ExtResource("44_l01wd")]
+position = Vector2(2160, -561)
+
+[node name="Scroll2" parent="OptionalScrolls" unique_id=390173106 instance=ExtResource("44_l01wd")]
+position = Vector2(7857, -653)
+scroll_index = 1
+
+[node name="Scroll3" parent="OptionalScrolls" unique_id=592903205 instance=ExtResource("44_l01wd")]
+position = Vector2(24504, -629)
+scroll_index = 2
+
+[node name="Scroll4" parent="OptionalScrolls" unique_id=1551150092 instance=ExtResource("44_l01wd")]
+position = Vector2(33740, -630)
+scroll_index = 3
+
+[node name="StartScreen" type="CanvasLayer" parent="." unique_id=2125602035]
+process_mode = 3
+layer = 100
+visible = false
+offset = Vector2(10, 0)
+transform = Transform2D(1, 0, 0, 1, 10, 0)
+script = ExtResource("25_q7ci5")
+
+[node name="Start" type="Control" parent="StartScreen" unique_id=1225581978]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -640.0
+offset_top = -360.0
+offset_right = -640.0
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.3, 1.3)
+
+[node name="TextureRect" type="TextureRect" parent="StartScreen/Start" unique_id=111254032]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -7.6923313
+offset_top = -12.307704
+offset_right = 1162.3076
+offset_bottom = 355.6923
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+pivot_offset = Vector2(465, 250)
+texture = ExtResource("26_trufv")
+
+[node name="Text" type="Control" parent="StartScreen" unique_id=1936710306]
+layout_mode = 3
+anchors_preset = 0
+scale = Vector2(0.85, 0.85)
+
+[node name="TextureRect" type="TextureRect" parent="StartScreen/Text" unique_id=442161207]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_right = 1170.0
+offset_bottom = 418.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.3052809, 0.3052809)
+pivot_offset = Vector2(830, 650)
+texture = ExtResource("27_kc6j4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="StartScreen" unique_id=1850314057]
+libraries/ = SubResource("AnimationLibrary_knhdr")
+autoplay = &"idle_click"
+
+[node name="BestScore" type="Label" parent="StartScreen" unique_id=1078983341]
+offset_left = 701.0
+offset_top = 496.0
+offset_right = 799.0
+offset_bottom = 538.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 35
+text = "0000"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="StartScreen" unique_id=1672214429]
+offset_left = 476.0
+offset_top = 496.0
+offset_right = 698.0
+offset_bottom = 538.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 35
+text = "Best Score:"
+horizontal_alignment = 1
+
+[node name="WisdomScreen" type="CanvasLayer" parent="." unique_id=1937590926]
+process_mode = 3
+layer = 100
+visible = false
+offset = Vector2(10, 0)
+transform = Transform2D(1, 0, 0, 1, 10, 0)
+script = ExtResource("28_ust8p")
+next_level_path = "uid://c1cvng4q233sl"
+
+[node name="Background" type="Control" parent="WisdomScreen" unique_id=557605096]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -640.0
+offset_top = -360.0
+offset_right = -640.0
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.3, 1.3)
+
+[node name="TextureRect" type="TextureRect" parent="WisdomScreen/Background" unique_id=1734997086]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -311.5507
+offset_top = -162.3077
+offset_right = 2446.319
+offset_bottom = 1383.8278
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.36142942, 0.36142942)
+pivot_offset = Vector2(465, 250)
+texture = ExtResource("29_3royl")
+
+[node name="Labels" type="Control" parent="WisdomScreen" unique_id=906301519]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title" type="Label" parent="WisdomScreen/Labels" unique_id=296790192]
+layout_mode = 0
+offset_left = 239.0
+offset_top = 74.0
+offset_right = 1050.0
+offset_bottom = 134.0
+theme_override_colors/font_color = Color(0.49411765, 0.23529412, 0.078431375, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 50
+text = "Scrolls of Knowledge"
+horizontal_alignment = 1
+
+[node name="Buttons" type="Button" parent="WisdomScreen" unique_id=1256688095]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="NextLevelButton" type="TextureButton" parent="WisdomScreen/Buttons" unique_id=1513532470 groups=["botones_sonoros"]]
+layout_mode = 0
+offset_left = 945.0
+offset_top = 496.0
+offset_right = 1975.0
+offset_bottom = 732.0
+scale = Vector2(0.25, 0.25)
+texture_normal = ExtResource("34_houbx")
+
+[node name="OptionalScrolls" type="Control" parent="WisdomScreen" unique_id=223917671]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Scroll1" type="Control" parent="WisdomScreen/OptionalScrolls" unique_id=1696301495]
+anchors_preset = 0
+offset_left = -10.0
+offset_right = 30.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="WisdomScreen/OptionalScrolls/Scroll1" unique_id=76670039]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 407.0
+offset_right = 299.0
+offset_bottom = 621.0
+texture = ExtResource("32_gcaxs")
+expand_mode = 1
+
+[node name="Caracter" type="Label" parent="WisdomScreen/OptionalScrolls/Scroll1" unique_id=2069987580]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 446.0
+offset_right = 249.0
+offset_bottom = 534.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 70
+text = "火"
+horizontal_alignment = 1
+
+[node name="Romanization" type="Label" parent="WisdomScreen/OptionalScrolls/Scroll1" unique_id=1867241622]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 528.0
+offset_right = 255.0
+offset_bottom = 557.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("34_dq4g3")
+theme_override_font_sizes/font_size = 18
+text = "huǒ"
+horizontal_alignment = 1
+
+[node name="Translation" type="Label" parent="WisdomScreen/OptionalScrolls/Scroll1" unique_id=900505138]
+layout_mode = 0
+offset_left = 135.0
+offset_top = 552.0
+offset_right = 274.0
+offset_bottom = 588.0
+theme_override_colors/font_color = Color(0.36734834, 0.16711995, 0.049386457, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 21
+text = "Fire"
+horizontal_alignment = 1
+
+[node name="Scroll2" type="Control" parent="WisdomScreen/OptionalScrolls" unique_id=1441926966]
+anchors_preset = 0
+offset_left = -10.0
+offset_top = 243.0
+offset_right = 30.0
+offset_bottom = 283.0
+
+[node name="TextureRect" type="TextureRect" parent="WisdomScreen/OptionalScrolls/Scroll2" unique_id=1316829342]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 164.0
+offset_right = 508.0
+offset_bottom = 378.0
+texture = ExtResource("32_gcaxs")
+expand_mode = 1
+
+[node name="Caracter" type="Label" parent="WisdomScreen/OptionalScrolls/Scroll2" unique_id=1098896998]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 203.0
+offset_right = 458.0
+offset_bottom = 289.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 70
+text = "水"
+horizontal_alignment = 1
+
+[node name="Romanization" type="Label" parent="WisdomScreen/OptionalScrolls/Scroll2" unique_id=229208636]
+layout_mode = 0
+offset_left = 366.0
+offset_top = 285.0
+offset_right = 467.0
+offset_bottom = 314.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("34_dq4g3")
+theme_override_font_sizes/font_size = 18
+text = "shuǐ"
+horizontal_alignment = 1
+
+[node name="Translation" type="Label" parent="WisdomScreen/OptionalScrolls/Scroll2" unique_id=543225936]
+layout_mode = 0
+offset_left = 347.0
+offset_top = 309.0
+offset_right = 486.0
+offset_bottom = 345.0
+theme_override_colors/font_color = Color(0.36734834, 0.16711995, 0.049386457, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 21
+text = "Water"
+horizontal_alignment = 1
+
+[node name="Scroll3" type="Control" parent="WisdomScreen/OptionalScrolls" unique_id=1329573190]
+anchors_preset = 0
+offset_left = -10.0
+offset_top = 243.0
+offset_right = 30.0
+offset_bottom = 283.0
+
+[node name="TextureRect" type="TextureRect" parent="WisdomScreen/OptionalScrolls/Scroll3" unique_id=1916917936]
+layout_mode = 0
+offset_left = 539.0
+offset_top = 164.0
+offset_right = 720.0
+offset_bottom = 378.0
+texture = ExtResource("32_gcaxs")
+expand_mode = 1
+
+[node name="Caracter" type="Label" parent="WisdomScreen/OptionalScrolls/Scroll3" unique_id=1842938199]
+layout_mode = 0
+offset_left = 587.0
+offset_top = 197.0
+offset_right = 670.0
+offset_bottom = 291.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 70
+text = "风"
+horizontal_alignment = 1
+
+[node name="Romanization" type="Label" parent="WisdomScreen/OptionalScrolls/Scroll3" unique_id=961415254]
+layout_mode = 0
+offset_left = 578.0
+offset_top = 285.0
+offset_right = 679.0
+offset_bottom = 314.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("34_dq4g3")
+theme_override_font_sizes/font_size = 18
+text = "fēng"
+horizontal_alignment = 1
+
+[node name="Translation" type="Label" parent="WisdomScreen/OptionalScrolls/Scroll3" unique_id=907145681]
+layout_mode = 0
+offset_left = 559.0
+offset_top = 309.0
+offset_right = 698.0
+offset_bottom = 345.0
+theme_override_colors/font_color = Color(0.36734834, 0.16711995, 0.049386457, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 21
+text = "Wind"
+horizontal_alignment = 1
+
+[node name="Scroll4" type="Control" parent="WisdomScreen/OptionalScrolls" unique_id=1295212906]
+anchors_preset = 0
+offset_left = -10.0
+offset_top = 243.0
+offset_right = 30.0
+offset_bottom = 283.0
+
+[node name="TextureRect" type="TextureRect" parent="WisdomScreen/OptionalScrolls/Scroll4" unique_id=1060008838]
+layout_mode = 0
+offset_left = 752.0
+offset_top = 164.0
+offset_right = 934.0
+offset_bottom = 378.0
+texture = ExtResource("32_gcaxs")
+expand_mode = 1
+
+[node name="Caracter" type="Label" parent="WisdomScreen/OptionalScrolls/Scroll4" unique_id=1364083344]
+layout_mode = 0
+offset_left = 804.0
+offset_top = 197.0
+offset_right = 881.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 70
+text = "山"
+horizontal_alignment = 1
+
+[node name="Romanization" type="Label" parent="WisdomScreen/OptionalScrolls/Scroll4" unique_id=1742198379]
+layout_mode = 0
+offset_left = 790.0
+offset_top = 285.0
+offset_right = 891.0
+offset_bottom = 314.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("34_dq4g3")
+theme_override_font_sizes/font_size = 18
+text = "shān"
+horizontal_alignment = 1
+
+[node name="Translation" type="Label" parent="WisdomScreen/OptionalScrolls/Scroll4" unique_id=1539156925]
+layout_mode = 0
+offset_left = 771.0
+offset_top = 309.0
+offset_right = 910.0
+offset_bottom = 345.0
+theme_override_colors/font_color = Color(0.36734834, 0.16711995, 0.049386457, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 18
+text = "Mountain"
+horizontal_alignment = 1
+
+[node name="RequiredScrolls" type="Control" parent="WisdomScreen" unique_id=725438685]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Scroll1" type="Control" parent="WisdomScreen/RequiredScrolls" unique_id=2037884880]
+anchors_preset = 0
+offset_left = -10.0
+offset_right = 30.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="WisdomScreen/RequiredScrolls/Scroll1" unique_id=204826468]
+layout_mode = 0
+offset_left = 97.0
+offset_top = 148.0
+offset_right = 309.0
+offset_bottom = 406.0
+texture = ExtResource("32_xgm5b")
+expand_mode = 1
+
+[node name="Caracter" type="Label" parent="WisdomScreen/RequiredScrolls/Scroll1" unique_id=801967365]
+layout_mode = 0
+offset_left = 135.0
+offset_top = 197.0
+offset_right = 267.0
+offset_bottom = 296.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 70
+text = "龙"
+horizontal_alignment = 1
+
+[node name="Romanization" type="Label" parent="WisdomScreen/RequiredScrolls/Scroll1" unique_id=1824156763]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 283.0
+offset_right = 255.0
+offset_bottom = 310.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("34_dq4g3")
+theme_override_font_sizes/font_size = 18
+text = "lóng"
+horizontal_alignment = 1
+
+[node name="Translation" type="Label" parent="WisdomScreen/RequiredScrolls/Scroll1" unique_id=1865814806]
+layout_mode = 0
+offset_left = 135.0
+offset_top = 304.0
+offset_right = 274.0
+offset_bottom = 340.0
+theme_override_colors/font_color = Color(0.36734834, 0.16711995, 0.049386457, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 21
+text = "Dragon"
+horizontal_alignment = 1
+
+[node name="Scroll2" type="Control" parent="WisdomScreen/RequiredScrolls" unique_id=1757671209]
+anchors_preset = 0
+offset_left = -10.0
+offset_right = 30.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="WisdomScreen/RequiredScrolls/Scroll2" unique_id=916405030]
+layout_mode = 0
+offset_left = 309.0
+offset_top = 148.0
+offset_right = 521.0
+offset_bottom = 406.0
+texture = ExtResource("32_xgm5b")
+expand_mode = 1
+
+[node name="Caracter" type="Label" parent="WisdomScreen/RequiredScrolls/Scroll2" unique_id=1206218762]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 203.0
+offset_right = 458.0
+offset_bottom = 289.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 70
+text = "力"
+horizontal_alignment = 1
+
+[node name="Romanization" type="Label" parent="WisdomScreen/RequiredScrolls/Scroll2" unique_id=1323925143]
+layout_mode = 0
+offset_left = 366.0
+offset_top = 285.0
+offset_right = 467.0
+offset_bottom = 314.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("34_dq4g3")
+theme_override_font_sizes/font_size = 18
+text = "lì"
+horizontal_alignment = 1
+
+[node name="Translation" type="Label" parent="WisdomScreen/RequiredScrolls/Scroll2" unique_id=506059651]
+layout_mode = 0
+offset_left = 347.0
+offset_top = 309.0
+offset_right = 486.0
+offset_bottom = 345.0
+theme_override_colors/font_color = Color(0.36734834, 0.16711995, 0.049386457, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 21
+text = "Power"
+horizontal_alignment = 1
+
+[node name="Scroll3" type="Control" parent="WisdomScreen/RequiredScrolls" unique_id=1331570889]
+anchors_preset = 0
+offset_left = -10.0
+offset_right = 30.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="WisdomScreen/RequiredScrolls/Scroll3" unique_id=1049394993]
+layout_mode = 0
+offset_left = 521.0
+offset_top = 148.0
+offset_right = 733.0
+offset_bottom = 406.0
+texture = ExtResource("32_xgm5b")
+expand_mode = 1
+
+[node name="Caracter" type="Label" parent="WisdomScreen/RequiredScrolls/Scroll3" unique_id=1775533409]
+layout_mode = 0
+offset_left = 587.0
+offset_top = 203.0
+offset_right = 670.0
+offset_bottom = 289.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 70
+text = "心"
+horizontal_alignment = 1
+
+[node name="Romanization" type="Label" parent="WisdomScreen/RequiredScrolls/Scroll3" unique_id=1121707417]
+layout_mode = 0
+offset_left = 578.0
+offset_top = 285.0
+offset_right = 679.0
+offset_bottom = 314.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("34_dq4g3")
+theme_override_font_sizes/font_size = 18
+text = "xīn"
+horizontal_alignment = 1
+
+[node name="Translation" type="Label" parent="WisdomScreen/RequiredScrolls/Scroll3" unique_id=1686747131]
+layout_mode = 0
+offset_left = 559.0
+offset_top = 309.0
+offset_right = 698.0
+offset_bottom = 345.0
+theme_override_colors/font_color = Color(0.36734834, 0.16711995, 0.049386457, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 21
+text = "Heart"
+horizontal_alignment = 1
+
+[node name="Scroll4" type="Control" parent="WisdomScreen/RequiredScrolls" unique_id=1900670168]
+anchors_preset = 0
+offset_left = -10.0
+offset_right = 30.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="WisdomScreen/RequiredScrolls/Scroll4" unique_id=621330316]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 148.0
+offset_right = 945.0
+offset_bottom = 406.0
+texture = ExtResource("32_xgm5b")
+expand_mode = 1
+
+[node name="Caracter" type="Label" parent="WisdomScreen/RequiredScrolls/Scroll4" unique_id=1987283930]
+layout_mode = 0
+offset_left = 796.0
+offset_top = 203.0
+offset_right = 886.0
+offset_bottom = 289.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 70
+text = "勇"
+horizontal_alignment = 1
+
+[node name="Romanization" type="Label" parent="WisdomScreen/RequiredScrolls/Scroll4" unique_id=1015333889]
+layout_mode = 0
+offset_left = 790.0
+offset_top = 285.0
+offset_right = 891.0
+offset_bottom = 314.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("34_dq4g3")
+theme_override_font_sizes/font_size = 18
+text = "yǒng"
+horizontal_alignment = 1
+
+[node name="Translation" type="Label" parent="WisdomScreen/RequiredScrolls/Scroll4" unique_id=1002306049]
+layout_mode = 0
+offset_left = 771.0
+offset_top = 309.0
+offset_right = 910.0
+offset_bottom = 345.0
+theme_override_colors/font_color = Color(0.36734834, 0.16711995, 0.049386457, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 21
+text = "Brave"
+horizontal_alignment = 1
+
+[node name="Scroll5" type="Control" parent="WisdomScreen/RequiredScrolls" unique_id=924198084]
+anchors_preset = 0
+offset_left = -10.0
+offset_right = 30.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="WisdomScreen/RequiredScrolls/Scroll5" unique_id=608297417]
+layout_mode = 0
+offset_left = 945.0
+offset_top = 148.0
+offset_right = 1157.0
+offset_bottom = 406.0
+texture = ExtResource("32_xgm5b")
+expand_mode = 1
+
+[node name="Caracter" type="Label" parent="WisdomScreen/RequiredScrolls/Scroll5" unique_id=920658627]
+layout_mode = 0
+offset_left = 1002.0
+offset_top = 203.0
+offset_right = 1103.0
+offset_bottom = 289.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 70
+text = "道"
+horizontal_alignment = 1
+
+[node name="Romanization" type="Label" parent="WisdomScreen/RequiredScrolls/Scroll5" unique_id=1283274494]
+layout_mode = 0
+offset_left = 1002.0
+offset_top = 285.0
+offset_right = 1103.0
+offset_bottom = 314.0
+theme_override_colors/font_color = Color(0.36862746, 0.16862746, 0.050980393, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("34_dq4g3")
+theme_override_font_sizes/font_size = 18
+text = "dào"
+horizontal_alignment = 1
+
+[node name="Translation" type="Label" parent="WisdomScreen/RequiredScrolls/Scroll5" unique_id=2100733972]
+layout_mode = 0
+offset_left = 983.0
+offset_top = 309.0
+offset_right = 1122.0
+offset_bottom = 345.0
+theme_override_colors/font_color = Color(0.36734834, 0.16711995, 0.049386457, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 21
+text = "Path"
+horizontal_alignment = 1
+
+[node name="ClickSound" type="AudioStreamPlayer" parent="WisdomScreen" unique_id=668591135]
+stream = ExtResource("38_eipfb")
+volume_db = 8.0
+
+[node name="PronunciationPlayer" type="AudioStreamPlayer" parent="WisdomScreen" unique_id=1885077740]
+volume_db = 15.0
+
+[node name="EndScreen" type="CanvasLayer" parent="." unique_id=1661360321]
+process_mode = 3
+layer = 100
+visible = false
+offset = Vector2(10, 0)
+transform = Transform2D(1, 0, 0, 1, 10, 0)
+script = ExtResource("28_7tofx")
+next_scene_path = "uid://c1cvng4q233sl"
+
+[node name="Background" type="Control" parent="EndScreen" unique_id=2018348054]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -640.0
+offset_top = -360.0
+offset_right = -640.0
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.3, 1.3)
+
+[node name="TextureRect" type="TextureRect" parent="EndScreen/Background" unique_id=1709635251]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -311.5507
+offset_top = -162.3077
+offset_right = 2446.319
+offset_bottom = 1383.8278
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.36142942, 0.36142942)
+pivot_offset = Vector2(465, 250)
+texture = ExtResource("29_ju8dd")
+
+[node name="Dashboard" type="Control" parent="EndScreen" unique_id=252153427]
+layout_mode = 3
+anchors_preset = 0
+scale = Vector2(0.85, 0.85)
+
+[node name="TextureRect" type="TextureRect" parent="EndScreen/Dashboard" unique_id=575742213]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -458.82355
+offset_top = -318.82355
+offset_right = 2128.6128
+offset_bottom = 1590.7927
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.30974215, 0.30974215)
+pivot_offset = Vector2(830, 650)
+texture = ExtResource("30_og86b")
+
+[node name="Stars" type="Control" parent="EndScreen" unique_id=1206721199]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Star1" type="TextureRect" parent="EndScreen/Stars" unique_id=2041442135]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 188.0
+offset_right = 897.0
+offset_bottom = 714.0
+scale = Vector2(0.13, 0.13)
+texture = ExtResource("31_uxe1b")
+
+[node name="Star2" type="TextureRect" parent="EndScreen/Stars" unique_id=1900865153]
+layout_mode = 0
+offset_left = 394.00006
+offset_top = 179.0
+offset_right = 970.00006
+offset_bottom = 705.0
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("31_uxe1b")
+
+[node name="Star3" type="TextureRect" parent="EndScreen/Stars" unique_id=1628371020]
+layout_mode = 0
+offset_left = 480.00003
+offset_top = 188.0
+offset_right = 1056.0
+offset_bottom = 714.0
+scale = Vector2(0.13, 0.13)
+texture = ExtResource("31_uxe1b")
+
+[node name="Labels" type="Control" parent="EndScreen" unique_id=1017682889]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label1" type="Label" parent="EndScreen/Labels" unique_id=1429792291]
+layout_mode = 0
+offset_left = 260.0
+offset_top = 128.0
+offset_right = 633.0
+offset_bottom = 173.0
+theme_override_colors/font_color = Color(0.49411765, 0.23529412, 0.078431375, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 34
+text = "LEVEL COMPLETED"
+
+[node name="Label2" type="Label" parent="EndScreen/Labels" unique_id=836988452]
+layout_mode = 0
+offset_left = 203.0
+offset_top = 321.0
+offset_right = 448.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0.49411765, 0.23529412, 0.078431375, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 24
+text = "Scrolls collected"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="EndScreen/Labels" unique_id=1916112393]
+layout_mode = 0
+offset_left = 203.0
+offset_top = 371.0
+offset_right = 448.0
+offset_bottom = 400.0
+theme_override_colors/font_color = Color(0.49411765, 0.23529412, 0.078431375, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 24
+text = "Level completed"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="EndScreen/Labels" unique_id=1437961289]
+layout_mode = 0
+offset_left = 203.0
+offset_top = 421.0
+offset_right = 448.0
+offset_bottom = 450.0
+theme_override_colors/font_color = Color(0.49411765, 0.23529412, 0.078431375, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 24
+text = "Optionals scrolls"
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="EndScreen/Labels" unique_id=911366177]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 496.0
+offset_right = 508.0
+offset_bottom = 532.0
+theme_override_colors/font_color = Color(0.49411765, 0.23529412, 0.078431375, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 30
+text = "TOTAL SCORE: "
+horizontal_alignment = 1
+
+[node name="ScrollsCollected" type="Label" parent="EndScreen/Labels" unique_id=475039116]
+layout_mode = 0
+offset_left = 567.0
+offset_top = 321.0
+offset_right = 660.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0.49411765, 0.23529412, 0.078431375, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 24
+text = "+0"
+horizontal_alignment = 1
+
+[node name="LevelCompletedPoints" type="Label" parent="EndScreen/Labels" unique_id=921720205]
+layout_mode = 0
+offset_left = 567.0
+offset_top = 371.0
+offset_right = 660.0
+offset_bottom = 400.0
+theme_override_colors/font_color = Color(0.49411765, 0.23529412, 0.078431375, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 24
+text = "+0"
+horizontal_alignment = 1
+
+[node name="OptionalsScrolls" type="Label" parent="EndScreen/Labels" unique_id=1531358436]
+layout_mode = 0
+offset_left = 567.0
+offset_top = 421.0
+offset_right = 660.0
+offset_bottom = 450.0
+theme_override_colors/font_color = Color(0.49411765, 0.23529412, 0.078431375, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 24
+text = "+0"
+horizontal_alignment = 1
+
+[node name="TotalScore" type="Label" parent="EndScreen/Labels" unique_id=21675944]
+layout_mode = 0
+offset_left = 509.0
+offset_top = 496.0
+offset_right = 587.0
+offset_bottom = 532.0
+theme_override_colors/font_color = Color(0.49411765, 0.23529412, 0.078431375, 1)
+theme_override_colors/font_shadow_color = Color(0.40705615, 0.40705618, 0.40705615, 0.36862746)
+theme_override_colors/font_outline_color = Color(0.08253647, 0.020963889, 0.0031901258, 1)
+theme_override_fonts/font = ExtResource("32_yqfal")
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 1
+
+[node name="Buttons" type="Button" parent="EndScreen" unique_id=1604744044]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="ContinueButton" type="TextureButton" parent="EndScreen/Buttons" unique_id=1913903489 groups=["botones_sonoros"]]
+layout_mode = 0
+offset_left = 309.0
+offset_top = 555.0
+offset_right = 1339.0
+offset_bottom = 791.0
+scale = Vector2(0.25, 0.25)
+texture_normal = ExtResource("33_ielkx")
+
+[node name="NextLevelButton" type="TextureButton" parent="EndScreen/Buttons" unique_id=437027725 groups=["botones_sonoros"]]
+layout_mode = 0
+offset_left = 961.0
+offset_top = 613.0
+offset_right = 1991.0
+offset_bottom = 849.0
+scale = Vector2(0.25, 0.25)
+texture_normal = ExtResource("34_houbx")
+
+[node name="Icons" type="Control" parent="EndScreen" unique_id=553851190]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Scroll" type="TextureRect" parent="EndScreen/Icons" unique_id=1653334483]
+layout_mode = 0
+offset_left = 515.0
+offset_top = 321.0
+offset_right = 864.71387
+offset_bottom = 554.1426
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("35_vrspg")
+
+[node name="Check" type="TextureRect" parent="EndScreen/Icons" unique_id=102884851]
+layout_mode = 0
+offset_left = 521.0
+offset_top = 371.0
+offset_right = 785.28564
+offset_bottom = 604.1426
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("36_ej6mk")
+
+[node name="Book" type="TextureRect" parent="EndScreen/Icons" unique_id=124805158]
+layout_mode = 0
+offset_left = 526.0
+offset_top = 421.0
+offset_right = 740.28564
+offset_bottom = 654.1426
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("37_rd52u")
+
+[node name="Lines" type="Control" parent="EndScreen" unique_id=903358449]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Line2D1" type="Line2D" parent="EndScreen/Lines" unique_id=1808520357]
+position = Vector2(0, -5)
+points = PackedVector2Array(203, 365, 671, 365)
+width = 1.0
+default_color = Color(0.84313726, 0.52156866, 0.2901961, 1)
+
+[node name="Line2D2" type="Line2D" parent="EndScreen/Lines" unique_id=1978133202]
+position = Vector2(0, 47)
+points = PackedVector2Array(203, 365, 671, 365)
+width = 1.0
+default_color = Color(0.84313726, 0.52156866, 0.2901961, 1)
+
+[node name="Line2D3" type="Line2D" parent="EndScreen/Lines" unique_id=897935242]
+position = Vector2(0, 100)
+points = PackedVector2Array(203, 365, 671, 365)
+width = 1.0
+default_color = Color(0.84313726, 0.52156866, 0.2901961, 1)
+
+[node name="ClickSound" type="AudioStreamPlayer" parent="EndScreen" unique_id=234442835]
+stream = ExtResource("38_eipfb")
+volume_db = 5.0
+
+[node name="StarSound" type="AudioStreamPlayer" parent="EndScreen" unique_id=1643344308]
+stream = ExtResource("39_53meb")
+volume_db = 4.0
+
+[node name="TryAgainScreen" type="CanvasLayer" parent="." unique_id=2060549293]
+process_mode = 3
+layer = 100
+visible = false
+offset = Vector2(10, 0)
+transform = Transform2D(1, 0, 0, 1, 10, 0)
+script = ExtResource("40_iuj8j")
+
+[node name="Start" type="Control" parent="TryAgainScreen" unique_id=1595986803]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -640.0
+offset_top = -360.0
+offset_right = -640.0
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.3, 1.3)
+
+[node name="TextureRect" type="TextureRect" parent="TryAgainScreen/Start" unique_id=1597792558]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -63.076927
+offset_top = -36.15386
+offset_right = 1356.9231
+offset_bottom = 488.15393
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+pivot_offset = Vector2(465, 250)
+texture = ExtResource("41_4qay4")
+
+[node name="Text" type="Control" parent="TryAgainScreen" unique_id=2101457910]
+layout_mode = 3
+anchors_preset = 0
+scale = Vector2(0.85, 0.85)
+
+[node name="TextureRect" type="TextureRect" parent="TryAgainScreen/Text" unique_id=787262896]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 47.058823
+offset_top = -35.294117
+offset_right = 948.62537
+offset_bottom = 664.2347
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.3052809, 0.3052809)
+pivot_offset = Vector2(830, 650)
+texture = ExtResource("42_nqxit")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TryAgainScreen" unique_id=370090138]
+libraries/ = SubResource("AnimationLibrary_knhdr")
+autoplay = &"idle_click"
+
+[node name="DeathSound" type="AudioStreamPlayer" parent="TryAgainScreen" unique_id=664833142]
+stream = ExtResource("43_mrina")
+volume_db = -3.0
+
+[node name="BGM" type="AudioStreamPlayer" parent="." unique_id=1124292871]
+stream = ExtResource("50_3i5st")
+volume_db = -10.0
+autoplay = true
+
+[connection signal="body_entered" from="Backgrounds/Killzone" to="." method="_on_killzone_body_entered"]
+[connection signal="pressed" from="EndScreen/Buttons/ContinueButton" to="EndScreen" method="_on_continue_button_pressed"]

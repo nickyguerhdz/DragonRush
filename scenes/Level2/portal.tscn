@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cwams80wiw3ni"]
+
+[ext_resource type="Script" uid="uid://36nkpqx3vb3j" path="res://scripts/portal_jade.gd" id="1_1doms"]
+[ext_resource type="Texture2D" uid="uid://b3thoan2mtjrs" path="res://assets/sprites/Decorations/Portal.png" id="2_1doms"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1doms"]
+radius = 66.0303
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_1doms"]
+particle_flag_disable_z = true
+direction = Vector3(1, -0.5, 0)
+spread = 30.0
+initial_velocity_min = 300.0
+initial_velocity_max = 500.0
+gravity = Vector3(0, 98, 0)
+scale_min = 0.0
+scale_max = 2.0
+color = Color(0.3529412, 0.7372549, 0.6745098, 1)
+
+[node name="Portal" type="Node2D" unique_id=1846685905]
+script = ExtResource("1_1doms")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=790087316]
+position = Vector2(0, -89)
+scale = Vector2(0.5179859, 0.5179856)
+texture = ExtResource("2_1doms")
+region_rect = Rect2(504, 303, 526, 417)
+
+[node name="DetectionArea" type="Area2D" parent="." unique_id=1945084209]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=1086962121]
+position = Vector2(0, -77)
+shape = SubResource("CircleShape2D_1doms")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=280409121]
+position = Vector2(137, -77)
+
+[node name="LaunchSound" type="AudioStreamPlayer" parent="." unique_id=1733091394]
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=1031192931]
+emitting = false
+amount = 20
+one_shot = true
+process_material = SubResource("ParticleProcessMaterial_1doms")

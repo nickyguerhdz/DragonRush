@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bxfhmb53ajo6a"]
+
+[ext_resource type="Texture2D" uid="uid://boqkfbl3ocrxw" path="res://assets/sprites/Decorations/Platforms1.png" id="1_p6h28"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cgrg5"]
+size = Vector2(118.575455, 319.69382)
+
+[node name="Bamboo" type="StaticBody2D" unique_id=515235600]
+
+[node name="Bamboo" type="Sprite2D" parent="." unique_id=1361786103]
+position = Vector2(3.500001, -13.449738)
+scale = Vector2(0.7822785, 0.7857734)
+texture = ExtResource("1_p6h28")
+region_enabled = true
+region_rect = Rect2(85, 460, 393, 532)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1975957341]
+position = Vector2(-29.28773, 17)
+shape = SubResource("RectangleShape2D_cgrg5")

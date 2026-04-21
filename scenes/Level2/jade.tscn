@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cu1bd0snsgx6t"]
+
+[ext_resource type="Script" uid="uid://b8ac2rour8vmn" path="res://scripts/spike.gd" id="1_inw3l"]
+[ext_resource type="Texture2D" uid="uid://bfng1wpyxo43b" path="res://assets/sprites/Decorations/Obstacles2.png" id="1_p6h28"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7a7y0"]
+size = Vector2(67, 51)
+
+[node name="Jade" type="Area2D" unique_id=1858617931]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource("1_inw3l")
+
+[node name="Jade" type="Sprite2D" parent="." unique_id=1608861192]
+scale = Vector2(0.4046244, 0.40462425)
+texture = ExtResource("1_p6h28")
+region_enabled = true
+region_rect = Rect2(432, 734, 226, 173)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=213775768]
+shape = SubResource("RectangleShape2D_7a7y0")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

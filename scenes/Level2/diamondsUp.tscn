@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cyjieiw2uooxi"]
+
+[ext_resource type="Script" uid="uid://b8ac2rour8vmn" path="res://scripts/spike.gd" id="1_7a7y0"]
+[ext_resource type="Texture2D" uid="uid://cbnm2voho30ny" path="res://assets/sprites/Decorations/DiamondsUp.png" id="2_ypm7w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7a7y0"]
+size = Vector2(432, 147)
+
+[node name="Spike" type="Area2D" unique_id=1858617931]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource("1_7a7y0")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1608861192]
+position = Vector2(-9.460219, 0)
+scale = Vector2(1.0312144, 1.0707965)
+texture = ExtResource("2_ypm7w")
+region_rect = Rect2(1049, 396, 476, 216)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=213775768]
+position = Vector2(-12, 27)
+shape = SubResource("RectangleShape2D_7a7y0")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

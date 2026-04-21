@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cmpjl1v1rfb6q"]
+
+[ext_resource type="Texture2D" uid="uid://bc40gs42ilm0t" path="res://assets/sprites/Decorations/Decorations1.png" id="1_cvp0o"]
+
+[node name="Bridge" type="StaticBody2D" unique_id=515235600]
+
+[node name="Bridge" type="Sprite2D" parent="." unique_id=1361786103]
+position = Vector2(8, -8)
+scale = Vector2(0.6698912, 0.74225533)
+texture = ExtResource("1_cvp0o")
+region_enabled = true
+region_rect = Rect2(26, 66, 827, 294)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=586994842]
+polygon = PackedVector2Array(-157, -27, -157, -39, -145, -42, -91, -28, -43, -21, -3, -21, 31, -21, 60, -25, 94, -32, 125, -39, 140, -45, 149, -39, 149, -24, 104, -11, 62, -4, 21, 0, -16, 0, -60, -1, -96, -6, -127, -13)

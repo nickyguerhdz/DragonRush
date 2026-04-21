@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cr8g5hjxhwpf2"]
+
+[ext_resource type="Texture2D" uid="uid://d1jn4byirb6vi" path="res://assets/sprites/Decorations/Platforms2.png" id="1_dmtnq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cgrg5"]
+size = Vector2(2969.7773, 195)
+
+[node name="Platform" type="StaticBody2D" unique_id=515235600]
+collision_mask = 4
+
+[node name="Platform2" type="Sprite2D" parent="." unique_id=939159529]
+position = Vector2(-664.77734, -5.4999914)
+scale = Vector2(1.330111, 1.3283583)
+texture = ExtResource("1_dmtnq")
+region_enabled = true
+region_rect = Rect2(19, 268, 1377, 201)
+
+[node name="Platform" type="Sprite2D" parent="." unique_id=1361786103]
+z_index = 3
+position = Vector2(688.00006, -7.5000143)
+scale = Vector2(1.2891228, 1.289855)
+texture = ExtResource("1_dmtnq")
+region_enabled = true
+region_rect = Rect2(228, 262, 1302, 207)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1975957341]
+z_index = 7
+position = Vector2(-16.888672, 3.5)
+shape = SubResource("RectangleShape2D_cgrg5")

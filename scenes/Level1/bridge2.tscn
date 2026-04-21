@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bqduju8g7gmdg"]
+
+[ext_resource type="Texture2D" uid="uid://bc40gs42ilm0t" path="res://assets/sprites/Decorations/Decorations1.png" id="1_1ppfa"]
+
+[node name="Bridge" type="StaticBody2D" unique_id=515235600]
+
+[node name="Bridge" type="Sprite2D" parent="." unique_id=1361786103]
+position = Vector2(0.9999988, -4.1115427)
+scale = Vector2(0.66786176, 0.68103087)
+texture = ExtResource("1_1ppfa")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(872, 66, 637, 294)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1829362901]
+polygon = PackedVector2Array(-196, -33, -132, -35, 67, 6, 143, 10, 143, 18, 77, 19, -35, -7, -95, -24)

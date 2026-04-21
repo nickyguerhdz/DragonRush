@@ -1,12 +1,15 @@
 [gd_scene format=3 uid="uid://dv8doqnmdbswk"]
 
 [ext_resource type="Script" uid="uid://7nk7uc7blad1" path="res://scripts/required_scroll.gd" id="1_2201p"]
-[ext_resource type="Texture2D" uid="uid://cpc3w5kiqaqsp" path="res://assets/sprites/Decorations/obstacles.png" id="1_c0qqn"]
+[ext_resource type="Texture2D" uid="uid://cpc3w5kiqaqsp" path="res://assets/sprites/Decorations/Obstacles1.png" id="1_c0qqn"]
+[ext_resource type="AudioStream" uid="uid://c6p87sfmsjdih" path="res://assets/sounds/collect-scroll.mp3" id="3_k5vr3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cgrg5"]
 size = Vector2(59.920715, 83.95269)
 
 [node name="Scroll" type="Area2D" unique_id=1551150092]
+collision_layer = 2
+collision_mask = 4
 script = ExtResource("1_2201p")
 
 [node name="Scroll" type="Sprite2D" parent="." unique_id=967256275]
@@ -20,5 +23,9 @@ region_rect = Rect2(1183, 557, 303, 344)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=606408951]
 position = Vector2(0.039642334, 0.023654938)
 shape = SubResource("RectangleShape2D_cgrg5")
+
+[node name="PickupSound" type="AudioStreamPlayer" parent="." unique_id=57160655]
+stream = ExtResource("3_k5vr3")
+volume_db = 1.0
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
